@@ -1,0 +1,57 @@
+export const db = [
+    { "id": "0", "code": "iphone", "img": "/250331120205383499.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "1", "code": "mac", "img": "/260304170010562379.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "2", "code": "watch", "img": "/250915140012203057.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "3", "code": "airpods", "img": "/250612160029073899.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "4", "code": "ipad", "img": "/250423160108437222.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "5", "code": "vision pro", "img": "/vision-pro-card-66-vision-pro-202510.jpg", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "6", "code": "accsessories", "img": "/250910160028119011.webp", "model": "Apple чexoл Case c MagSafe Полупрозрачный для iPhone Air", "price": "14 399 000" },
+    { "id": "7", "code": "iphone", "img": "/250331120218624932.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "8", "code": "mac", "img": "/250812160024289582.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "9", "code": "watch", "img": "/250915140016115354.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "10", "code": "airpods", "img": "/250612160028441407.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "11", "code": "ipad", "img": "/250423160030262214.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "12", "code": "iphone", "img": "/250331120205383499.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "13", "code": "watch", "img": "/250915140012203057.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "14", "code": "mac", "img": "/260304170010562379.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "15", "code": "ipad", "img": "/250423160108437222.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "16", "code": "airpods", "img": "/250612160029073899.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "17", "code": "vision pro", "img": "/vision-pro-card-66-vision-pro-202510.jpg", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "18", "code": "iphone", "img": "/250331120218624932.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "19", "code": "mac", "img": "/250812160024289582.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "20", "code": "watch", "img": "/250915140016115354.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "21", "code": "accsessories", "img": "/250910160028119011.webp", "model": "Apple чexoл Case c MagSafe Полупрозрачный для iPhone Air", "price": "14 399 000" },
+    { "id": "22", "code": "ipad", "img": "/250423160030262214.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "23", "code": "airpods", "img": "/250612160028441407.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "24", "code": "iphone", "img": "/250331120205383499.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "25", "code": "mac", "img": "/260304170010562379.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "26", "code": "watch", "img": "/250915140012203057.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "27", "code": "ipad", "img": "/250423160108437222.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "28", "code": "vision pro", "img": "/vision-pro-card-66-vision-pro-202510.jpg", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "29", "code": "airpods", "img": "/250612160029073899.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "30", "code": "iphone", "img": "/250331120218624932.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "31", "code": "mac", "img": "/250812160024289582.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "32", "code": "watch", "img": "/250915140016115354.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "33", "code": "accsessories", "img": "/250910160028119011.webp", "model": "Apple чexoл Case c MagSafe Полупрозрачный для iPhone Air", "price": "14 399 000" },
+    { "id": "34", "code": "ipad", "img": "/250423160030262214.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "35", "code": "airpods", "img": "/250612160028441407.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "36", "code": "iphone", "img": "/250331120205383499.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "37", "code": "mac", "img": "/260304170010562379.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "38", "code": "watch", "img": "/250915140012203057.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "39", "code": "ipad", "img": "/250423160108437222.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "40", "code": "vision pro", "img": "/vision-pro-card-66-vision-pro-202510.jpg", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "41", "code": "airpods", "img": "/250612160029073899.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "42", "code": "iphone", "img": "/250331120218624932.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "43", "code": "mac", "img": "/250812160024289582.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "44", "code": "watch", "img": "/250915140016115354.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "45", "code": "accsessories", "img": "/250910160028119011.webp", "model": "Apple чexoл Case c MagSafe Полупрозрачный для iPhone Air", "price": "14 399 000" },
+    { "id": "46", "code": "ipad", "img": "/250423160030262214.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
+    { "id": "47", "code": "airpods", "img": "/250612160028441407.webp", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" }
+]
+
+
+
+
+
+
+

@@ -1,13 +1,5 @@
 import type { ReactNode } from "react"
-import type React from "react"
-import { Button } from "../../components/ui/button"
 
-const product = {
-    "id": "0",
-    "img": "/250331120205383499.webp",
-    "model": "iPhone 17, 256 GB, Mist Blue",
-    "price": "14 399 000"
-}
 
 type ProductCardProps = {
     id: string

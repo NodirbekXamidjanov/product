@@ -7,27 +7,28 @@ export const Navbar: React.FC = (): React.ReactNode => {
       <div className=" m-auto flex justify-center max-w-[1024px] w-full; h-[44px]">
         <ul className="flex w-[60%] justify-between gap-5 text-[13px] text-[#323232] items-center">
           <li className=" leading-none tracking-[-.01em]">
-            <a href="#">
-              <img src="/image.png" className="w-5 rounded-[50%]" alt="" />
+            <a href="/">
+              {/* <img src="/image.png" className="w-5 rounded-[50%]" alt="" /> */}
+              <span className="font-semibold p-1 border border-[#28292b] rounded-md">PRODUCT</span>
             </a>
           </li>
           <li>
-            <a href="#">Store</a>
+            <a href="/store">Store</a>
           </li>
           <li>
-            <a href="#">Mac</a>
+            <a href="/mac">Mac</a>
           </li>
           <li>
-            <a href="#">Iphone</a>
+            <a href="/iphone">Iphone</a>
           </li>
           <li>
-            <a href="#">Ipad</a>
+            <a href="/ipad">Ipad</a>
           </li>
           <li>
-            <a href="#">Apple Watch</a>
+            <a href="/applewatch">Apple Watch</a>
           </li>
           <li>
-            <a href="#">PC</a>
+            <a href="/pc" >PC</a>
           </li>
           <li className="mt-1">
             <button>
@@ -39,6 +40,7 @@ export const Navbar: React.FC = (): React.ReactNode => {
           </li>
         </ul>
       </div>
+      
     </nav>
   )
 }

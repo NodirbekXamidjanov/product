@@ -8,6 +8,7 @@ const items = [
     { label: "Apple Vision Pro", img: "/store-card-13-vision-pro-nav-202401.png", href: "#" },
     { label: "AirPods", img: "/store-card-13-airpods-nav-202509.png", href: "#" },
     { label: "Accessories", img: "/store-card-13-accessories-nav-202603.png", href: "#" },
+    { label: "PC", img: "public/article-1280x720.3d69faa7.png", href: "#" },
 ];
 
 export const StoreMenu: React.FC = (): React.ReactNode => {

@@ -1,8 +1,10 @@
 import { Button } from "../components/ui/button"
 import { CategoryFilter, Navbar, ProductCard, StoreMenu } from "./components"
 import { db } from "../database/db"
+import { useNavigate } from "react-router"
 
 export const Home: React.FC = (): React.ReactNode => {
+    const navigate = useNavigate()
     return (
         <>
             <Navbar></Navbar>
@@ -13,7 +15,7 @@ export const Home: React.FC = (): React.ReactNode => {
                     <div className="relative z-10">
                         <h2 className="text-[56px] font-semibold">iPhone</h2>
                         <p className="mt-[6px] text-[28px] font-normal">So'ngi iPhone tarkibi bilan tanishing.</p>
-                        <Button variant='outline' className="mt-6 px-6 py-2 rounded-full cursor-pointer text-white hover:bg-white hover:text-black text-sm font-medium opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                        <Button variant='outline' onClick={() => navigate("/iphone")} className="mt-6 px-6 py-2 rounded-full cursor-pointer text-white hover:bg-white hover:text-black text-sm font-medium opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
                             Yaqinroq qarash →
                         </Button>
                     </div>
@@ -24,7 +26,7 @@ export const Home: React.FC = (): React.ReactNode => {
                     <div className="relative z-10">
                         <h2 className="text-[56px] font-semibold">MacBook</h2>
                         <p className="mt-[6px] text-[28px] font-normal">Ajablanarli Mac. Ajablanarli Narx.</p>
-                        <Button variant='outline' className="mt-6 px-6 py-2 rounded-full cursor-pointer text-white hover:bg-white hover:text-black text-sm font-medium opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                        <Button variant='outline' onClick={() => navigate("/mac")} className="mt-6 px-6 py-2 rounded-full cursor-pointer text-white hover:bg-white hover:text-black text-sm font-medium opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
                             Yaqinroq qarash →
                         </Button>
                     </div>
@@ -35,7 +37,7 @@ export const Home: React.FC = (): React.ReactNode => {
                     <div className="relative z-10">
                         <h2 className="text-[56px] font-semibold">iPad Air</h2>
                         <p className="mt-[6px] text-[28px] font-normal">Endi M4 tomonidan super zaryadlangan.</p>
-                        <Button variant='outline' className="mt-6 px-6 py-2 rounded-full cursor-pointer text-white hover:bg-white hover:text-black text-sm font-medium opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                        <Button variant='outline' onClick={() => navigate("/ipad")} className="mt-6 px-6 py-2 rounded-full cursor-pointer text-white hover:bg-white hover:text-black text-sm font-medium opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
                             Yaqinroq qarash →
                         </Button>
                     </div>
@@ -47,7 +49,7 @@ export const Home: React.FC = (): React.ReactNode => {
                         <div className="relative z-10">
                             <h2 className="text-[56px] font-semibold">Watch SERIES 11</h2>
                             <p className="mt-[6px] text-[28px] font-normal">Sog'ligingizni tomosha qilishni zamonaviy usuli.</p>
-                            <Button variant='outline' className="mt-6 px-6 py-2 rounded-full cursor-pointer text-white hover:bg-white hover:text-black text-sm font-medium opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                            <Button variant='outline' onClick={() => navigate("/applewatch")} className="mt-6 px-6 py-2 rounded-full cursor-pointer text-white hover:bg-white hover:text-black text-sm font-medium opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
                                 Yaqinroq qarash →
                             </Button>
                         </div>
@@ -58,7 +60,7 @@ export const Home: React.FC = (): React.ReactNode => {
                         <div className="relative z-10">
                             <h2 className="text-[56px] font-semibold">AirPods Pro 3</h2>
                             <p className="mt-[6px] text-[28px] font-normal">Dunyodagi eng yaxshi Active Noise bekor qilish.</p>
-                            <Button variant='outline' className="mt-6 px-6 py-2 rounded-full cursor-pointer text-white hover:bg-white hover:text-black text-sm font-medium opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                            <Button variant='outline' onClick={() => navigate("/airpods")} className="mt-6 px-6 py-2 rounded-full cursor-pointer text-white hover:bg-white hover:text-black text-sm font-medium opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
                                 Yaqinroq qarash →
                             </Button>
                         </div>

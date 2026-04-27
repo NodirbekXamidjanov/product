@@ -10,14 +10,14 @@ type ProductCardProps = {
 
 export const ProductCard = ({ img, model, price }: ProductCardProps): ReactNode => {
     return (
-        <div className="flex flex-col items-center w-[280px]" style={{ fontFamily: "-apple-system, 'SF Pro Display', sans-serif" }}>
+        <div className="flex flex-col items-center" style={{ fontFamily: "-apple-system, 'SF Pro Display', sans-serif" }}>
 
             {/* Rasm */}
-            <div className="w-full rounded-[18px] overflow-hidden cursor-pointer group" style={{ aspectRatio: "4/3.2" }}>
+            <div className="w-full rounded-[18px] overflow-hidden bg-white cursor-pointer group" style={{ aspectRatio: "3/2.2" }}>
                 <img
                     src={img}
                     alt={model}
-                    className="w-full h-full object-contain p-4 transition-transform duration-300 group-hover:scale-110"
+                    className="w-full h-full object-contain pt-3 transition-transform duration-300 group-hover:scale-110"
                 />
             </div>
 

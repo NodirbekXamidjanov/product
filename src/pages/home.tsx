@@ -1,13 +1,12 @@
 import { Button } from "../components/ui/button"
-import { CategoryFilter, Navbar, ProductCard, StoreMenu } from "./components"
+import { CategoryFilter, ProductCard, StoreMenu } from "./components"
 import { db } from "../database/db"
 import { useNavigate } from "react-router"
 
 export const Home: React.FC = (): React.ReactNode => {
     const navigate = useNavigate()
     return (
-        <>
-            <Navbar></Navbar>
+        <div className="page-transition">
             <p className="leading-5 font-medium text-center tracking-[-.001em] text-[12px] text-[#323232] pt-2 pb-2 ">PRODUCT - Professional Yondashuv • Faqat rasmiy Apple • Professional PC kompyuterlari</p>
             <section className="flex flex-col gap-3">
                 <div className="bg-[url('/hero_iphone_family__fuz5j2v5xx6y_large.jpg')] cursor-pointer bg-center bg-no-repeat w-full min-h-[580px] text-center pt-12 relative group">
@@ -85,7 +84,7 @@ export const Home: React.FC = (): React.ReactNode => {
                     </div>
                 </div>
             </section>
-        </>
+        </div>
 
     )
 }

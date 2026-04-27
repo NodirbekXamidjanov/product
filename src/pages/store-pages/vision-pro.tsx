@@ -1,16 +1,21 @@
+import type React from "react";
 import { db } from "../../database/db";
-import { Navbar, ProductCard } from "../components"
+import { ProductCard } from "../components"
 import { FilterSidebar } from "../components/filter-products"
 
 const items = [
     { label: "Vision Pro", img: "public/nav_iphone_17pro__b8rt659h2ogi_large_2x.png" },
 ];
 
-export const VisionPro = () => {
-    const data = db.filter(db_item => db_item.code === "vision pro")
+interface VisionProProps {
+    store?: boolean,
+    width?: number
+}
+
+export const VisionPro = ({ store = false, width = 0 }: VisionProProps): React.ReactNode => {
+    const data = width ? db.filter(db_item => db_item.code === "vision pro").slice(0, width) : db.filter(db_item => db_item.code === "vision pro")
     return (
         <div>
-            <Navbar />
             <div className="w-full h-auto bg-white m-auto">
                 <h2 className="ml-[13%] text-[60px] mt-12 font-semibold ">
                     Vision Pro
@@ -37,7 +42,7 @@ export const VisionPro = () => {
                 </div>
             </div>
             <div className="w-full h-auto pt-12 bg-[#f5f5f7] px-3 flex gap-6">
-                <div className="">
+                <div className={`sticky top-px h-[calc(100vh-1px)] ${store && "hidden"}`}>
                     <FilterSidebar />
                 </div>
                 <div className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 justify-items-center pt-6">

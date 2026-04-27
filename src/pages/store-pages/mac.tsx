@@ -1,5 +1,6 @@
+import type React from "react";
 import { db } from "../../database/db";
-import { Navbar, ProductCard } from "../components"
+import { ProductCard } from "../components"
 import { FilterSidebar } from "../components/filter-products";
 
 const items = [
@@ -13,13 +14,18 @@ const items = [
     { label: "Accessories", img: "public/nav_accessories_c3e74ad3c_2x.png" },
 ];
 
-export const Mac = () => {
-    const data = db.filter(db_item => db_item.code === "mac")
+interface MacProps {
+    store?: boolean,
+    width?: number
+}
+
+export const Mac = ({ store = false, width = 0 }: MacProps): React.ReactNode => {    
+    const data = width ? db.filter(db_item => db_item.code === "mac").slice(0, width) : db.filter(db_item => db_item.code === "mac")
     return (
-        <div>
-            <Navbar />
-            <div className="w-full h-auto bg-white m-auto">
-                <h2 className="ml-[13%] text-[60px] mt-12 font-semibold ">
+        <div className="page-transition">
+            {/* <Navbar /> */}
+            <div className="mac w-full h-auto bg-white m-auto">
+                <h2 className="ml-[13%] text-[60px] pt-12 font-semibold ">
                     Shop Mac
                 </h2>
                 <div className="bg-white w-full pt-12">
@@ -35,7 +41,7 @@ export const Mac = () => {
                                     className="w-full max-w-[98px] h-[70px] object-contain mb-3"
                                 />
 
-                                <span className="text-[12px] text-[#1d1d1f] text-center">
+                                <span className="text-[14px] text-[#1d1d1f] text-center">
                                     {label}
                                 </span>
                             </li>
@@ -43,8 +49,9 @@ export const Mac = () => {
                     </ul>
                 </div>
             </div>
-            <div className="w-full h-auto mt-12 bg-[#f5f5f7] px-3 flex gap-3 ">
-                <div className="sticky top-px h-[calc(100vh-1px)]">
+
+            <div className="w-full h-auto mt-6 bg-[#f5f5f7] px-3 pb-6 flex gap-3 ">
+                <div className={`sticky top-px h-[calc(100vh-1px)] ${store && "hidden"}`}>
                     <FilterSidebar />
                 </div>
                 <div className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 justify-items-center pt-6">

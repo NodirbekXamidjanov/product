@@ -56,7 +56,7 @@ export const Home: React.FC = (): React.ReactNode => {
                         </div>
                     </div>
 
-                    <div className="bg-[url('/promo_ipad_air_m4__f9ie3h3pzr6m_large.jpg')] cursor-pointer bg-center bg-no-repeat w-full min-h-[580px] text-center pt-12 relative group">
+                    <div className="bg-[url('public/promo_airpodspro_3__f6xmza7bglei_large.jpg')] cursor-pointer bg-center bg-no-repeat w-full min-h-[580px] text-center pt-12 relative group">
                         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-500" />
                         <div className="relative z-10">
                             <h2 className="text-[56px] font-semibold">AirPods Pro 3</h2>

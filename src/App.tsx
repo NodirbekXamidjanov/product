@@ -1,13 +1,13 @@
 import { BrowserRouter, Route, Routes } from 'react-router'
 import './index.css'
-import { Home, Navbar, Store } from './pages'
+import { AboutProduct, Home, Navbar, Store } from './pages'
 import { AirPods, AppleWatch, Ipad, Iphone, Mac, Pc, VisionPro } from './pages/store-pages'
 import { ScrollToTop } from './pages/components/ScrollTop'
 
 function App() {
   return (
 
-      <BrowserRouter>
+    <BrowserRouter>
       <Navbar />
       <ScrollToTop />
       <Routes>
@@ -28,6 +28,7 @@ function App() {
         <Route path='/applewatch' element={<AppleWatch store={false} width={0} />} />
         <Route path='/airpods' element={<AirPods store={false} width={0} />} />
         <Route path='/vision-pro' element={<VisionPro store={false} width={0} />} />
+        <Route path='/about-product' element={<AboutProduct />} />
       </Routes>
     </BrowserRouter>
 

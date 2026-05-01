@@ -20,15 +20,15 @@ export const VisionPro = ({ store = false, width = 0 }: VisionProProps): React.R
                 <h2 className="ml-[13%] text-[60px] mt-12 font-semibold ">
                     Vision Pro
                 </h2>
-                <div className="pt-12 w-[77%] ">
-                    <ul className="flex gap-5 justify-center items-end m-0 p-0 list-none">
-                        {items.map(({ label, img }) => (
+                <div className="pt-12 w-[77%] m-auto">
+                    <ul className="flex gap-5 justify-start m-0 p-0 list-none">
+                        {items.map(({ label }) => (
                             <li
                                 key={label}
-                                className="flex flex-col center flex-1 min-w-[90px] max-w-[146px] px-2 pt-4 pb-5 cursor-pointer "
+                                className="flex flex-col items-center flex-1 min-w-[90px] max-w-[146px] px-2 pt-4 pb-5 cursor-pointer "
                             >
                                 <img
-                                    src={img}
+                                    src={"/vision-pro-card-66-vision-pro-202510.jpg"}
                                     alt={label}
                                     className="w-full max-w-[98px] h-[70px] object-contain mb-3"
                                 />

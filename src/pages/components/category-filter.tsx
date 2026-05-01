@@ -32,7 +32,9 @@ export const CategoryFilter = () => {
                 <button
                     key={cat}
                     ref={(el) => { tabRefs.current[cat] = el }}
-                    onClick={() => setActive(cat)}
+                    onClick={() => {
+                        setActive(cat)
+                    }}
                     className={`
             relative z-10 px-4 py-2 rounded-full text-[15px] font-medium
             transition-colors duration-300 cursor-pointer border-none bg-transparent

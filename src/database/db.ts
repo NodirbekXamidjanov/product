@@ -66,3 +66,4 @@ export const db = [
     { "id": "64", "code": "pc", "img": "public/37207b9f3eb91aef3e42e84ea4c86f8a.png", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
     { "id": "65", "code": "pc", "img": "public/408991b8467a56568ec44f6f0bded995.png", "model": "iPhone 17, 256 GB, Mist Blue", "price": "14 399 000" },
 ]
+

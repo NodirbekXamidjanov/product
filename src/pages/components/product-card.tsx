@@ -1,4 +1,5 @@
 import type { ReactNode } from "react"
+import { useNavigate } from "react-router"
 
 
 type ProductCardProps = {
@@ -9,11 +10,12 @@ type ProductCardProps = {
 }
 
 export const ProductCard = ({ img, model, price }: ProductCardProps): ReactNode => {
+    const navigate = useNavigate()
     return (
         <div className="flex flex-col items-center" style={{ fontFamily: "-apple-system, 'SF Pro Display', sans-serif" }}>
 
             {/* Rasm */}
-            <div className="w-full rounded-[18px] overflow-hidden bg-white cursor-pointer group" style={{ aspectRatio: "3/2.2" }}>
+            <div onClick={() => navigate("/about-product")} className="w-full rounded-[18px] overflow-hidden bg-white cursor-pointer group" style={{ aspectRatio: "3/2.2" }}>
                 <img
                     src={img}
                     alt={model}

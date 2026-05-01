@@ -5,6 +5,8 @@ import { useNavigate } from "react-router"
 
 export const Home: React.FC = (): React.ReactNode => {
     const navigate = useNavigate()
+    console.log(db);
+    
     return (
         <div className="page-transition">
             <p className="leading-5 font-medium text-center tracking-[-.001em] text-[12px] text-[#323232] pt-2 pb-2 ">PRODUCT - Professional Yondashuv • Faqat rasmiy Apple • Professional PC kompyuterlari</p>

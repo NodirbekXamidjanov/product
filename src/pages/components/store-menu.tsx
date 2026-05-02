@@ -1,14 +1,14 @@
 import type React from "react";
 
 const items = [
-    { label: "Mac", img: "/store-card-13-mac-nav-202603.png", href: "#" },
-    { label: "iPhone", img: "/store-card-13-iphone-nav-202509.png", href: "#" },
-    { label: "iPad", img: "/store-card-13-ipad-nav-202405.png", href: "#" },
-    { label: "Apple Watch", img: "/store-card-13-watch-nav-202509.png", href: "#" },
-    { label: "Apple Vision Pro", img: "/store-card-13-vision-pro-nav-202401.png", href: "#" },
-    { label: "AirPods", img: "/store-card-13-airpods-nav-202509.png", href: "#" },
-    { label: "Accessories", img: "/store-card-13-accessories-nav-202603.png", href: "#" },
-    { label: "PC", img: "public/article-1280x720.3d69faa7.png", href: "#" },
+    { label: "Mac", img: "/store-card-13-mac-nav-202603.png", href: "/mac" },
+    { label: "iPhone", img: "/store-card-13-iphone-nav-202509.png", href: "/iphone" },
+    { label: "iPad", img: "/store-card-13-ipad-nav-202405.png", href: "/ipad" },
+    { label: "Apple Watch", img: "/store-card-13-watch-nav-202509.png", href: "/applewatch" },
+    { label: "Apple Vision Pro", img: "/store-card-13-vision-pro-nav-202401.png", href: "/vision-pro" },
+    { label: "AirPods", img: "/store-card-13-airpods-nav-202509.png", href: "/airpods" },
+    { label: "Accessories", img: "/store-card-13-accessories-nav-202603.png", href: "/accessories" },
+    { label: "PC", img: "public/article-1280x720.3d69faa7.png", href: "/pc" },
 ];
 
 export const StoreMenu: React.FC = (): React.ReactNode => {
